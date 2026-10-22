@@ -6,6 +6,8 @@
 print("\nExercici 1: Imprimir missatges")
 print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies separades.")
 
+print("--------------"  )
+
 ### Completa aquí
 
 print("--------------")
