@@ -77,8 +77,3 @@ print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
 ### Completa aquí
 
-#pruebas. en esta función se especifica el nombre del parametro y el tipo de parametro separado por dos puntos c/u.
-def funcion_prueba(nombre: str, apellido: str, edad: int):
-    print(f"Hola, mi nombre: {nombre}, apellido: {apellido}, edad:{edad}")
-
-funcion_prueba("Arianna", "Leccese", 22)
