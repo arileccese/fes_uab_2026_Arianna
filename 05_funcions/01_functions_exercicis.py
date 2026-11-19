@@ -4,19 +4,19 @@
 
 
 #Pruebas internas:
-#en esta función se especifica el nombre del parametro y el tipo de parametro separado por dos puntos c/u.
+#en esta función se especifica el nombre del parametro y el tipo de parametro separado por dos puntos c/u en el argumento de la funcion.
+print("\n\n____________________prueba1")
 def funcion_prueba(nombre: str, apellido: str, edad: int):
     print(f"Hola, mi nombre: {nombre}, apellido: {apellido}, edad:{edad}")
 
 funcion_prueba("Arianna", "Leccese", 22)
-
+print("\n\n____________________prueba2")
 
 def funcion_muestra_parametro_y_valor(**kwargs):
     for parametro, valor in kwargs.items():
         print(f"{parametro}: {valor}")
 
 funcion_muestra_parametro_y_valor(nombre = "ari", edad=2, apellido="lec")
-
 
 # Exercici 1: Funció de salutació
 # Crea una funció saludar_a(nom, salutacio="Hola") que imprimeixi la salutació seguida del nom.
@@ -67,15 +67,31 @@ sumar_tot(2,3)
 sumar_tot(5,8,9,7,1)
 sumar_tot(5,8,9,7,1,9,6,8,7,1)
 
+
+print("\n\n____________________exercici 5")
 # Exercici 5: Taula de multiplicar
 # Crea una funció taula_multiplicar(numero, limit=10) que imprimeixi la taula de multiplicar
 # del número fins al límit indicat, fent servir range().
+def taula_multiplicar(numero, limit = 10):
+    for i in range(1, limit):
+        print(numero * i)
+
+taula_multiplicar(2)
 
 
 # Exercici 6: Informació amb **kwargs
 # Crea una funció mostrar_perfil(**kwargs) que imprimeixi cada parella clau: valor.
 # Crida-la amb les dades d'un estudiant (nom, edat, grau).
+print("\n\n____________________exercici 6")
+def mostrar_perfil(**kwargs):
+    for parametro, valor in kwargs.items():
+        print(f"{parametro}: {valor}")
+
+mostrar_perfil(nombre= "ari", apelido= "lec", edad= 22)
+
+
 
 # Exercici 7: Reconvertir exercicis anteriors
 # Torna a l'exercici del factorial (while) i del màxim d'una llista (for)
 # i converteix-los en funcions que retornin el resultat.
+
