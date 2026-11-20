@@ -38,11 +38,15 @@ print("nombre" in estudiante)
 print("email" in estudiante)
 
 
-
 # Exercici 5: Recórrer un diccionari
 # Recorre el diccionari amb un bucle for i items() i imprimeix cada parella com "clau: valor".
+print("\n_____________ex5")
+for parametro, valor in estudiante.items():
+    print(f"{parametro}: {valor}")
+
 
 # Exercici 6: Comptar paraules
 # Donada la llista de paraules:
 # paraules = ["sol", "lluna", "sol", "estrella", "lluna", "sol"]
 # Crea un diccionari que indiqui quantes vegades apareix cada paraula.
+
